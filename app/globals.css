@@ -1,26 +1,293 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@plugin "tailwindcss-animate";
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* Define Custom Theme Variables directly in CSS (Replaces tailwind.config.ts) */
+@theme {
+  /* Fonts */
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+    "Helvetica Neue", Arial, sans-serif;
+  --font-display:
+    -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue",
+    sans-serif;
+  --font-body:
+    -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial,
+    sans-serif;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Colors - Mapping HSL vars */
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-navbar: hsl(var(--navbar));
+  --color-navbar-foreground: hsl(var(--navbar-foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-primary-light: hsl(var(--primary-light));
+  --color-primary-dark: hsl(var(--primary-dark));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-info: hsl(var(--info));
+  --color-info-foreground: hsl(var(--info-foreground));
+
+  --color-golden: hsl(var(--golden));
+  --color-golden-foreground: hsl(var(--golden-foreground));
+
+  --color-navy: hsl(var(--navy));
+  --color-navy-foreground: hsl(var(--navy-foreground));
+
+  --color-hero-overlay: hsl(var(--hero-overlay));
+
+  --color-success: hsl(var(--success));
+  --color-success-foreground: hsl(var(--success-foreground));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --color-footer: hsl(var(--footer));
+  --color-footer-foreground: hsl(var(--footer-foreground));
+
+  /* Sidebar */
+  --color-sidebar: hsl(var(--sidebar-background));
+  --color-sidebar-foreground: hsl(var(--sidebar-foreground));
+  --color-sidebar-primary: hsl(var(--sidebar-primary));
+  --color-sidebar-primary-foreground: hsl(var(--sidebar-primary-foreground));
+  --color-sidebar-accent: hsl(var(--sidebar-accent));
+  --color-sidebar-accent-foreground: hsl(var(--sidebar-accent-foreground));
+  --color-sidebar-border: hsl(var(--sidebar-border));
+  --color-sidebar-ring: hsl(var(--sidebar-ring));
+
+  /* Radius */
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-xl: 1rem;
+  --radius-2xl: 1.25rem;
+  --radius-3xl: 1.5rem;
+
+  /* Shadows */
+  --shadow-soft: var(--shadow-soft);
+  --shadow-card: var(--shadow-card);
+  --shadow-hover: var(--shadow-hover);
+  --shadow-glow: var(--shadow-glow);
+  --shadow-navbar: var(--shadow-navbar);
+
+  /* Animations */
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+  --animate-count-up: count-up 0.5s ease-out forwards;
+  --animate-slide-left: slide-left 30s linear infinite;
+  --animate-shimmer: shimmer 2s infinite;
+
+  /* Custom Heights */
+  --spacing-18: 4.5rem;
+  --spacing-22: 5.5rem;
+
+  /* Keyframes */
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+  @keyframes count-up {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes slide-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes shimmer {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Utilities Layer - Custom Utility Classes */
+@utility container-custom {
+  @apply max-w-7xl mx-auto;
+}
+
+@utility section-padding {
+  @apply px-5 sm:px-8 lg:px-12 xl:px-16 py-16 lg:py-24;
+}
+
+@utility section-padding-sm {
+  @apply px-5 sm:px-8 lg:px-12 py-10 lg:py-16;
+}
+
+@utility text-gradient-primary {
+  @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+}
+
+@utility card-hover {
+  @apply transition-all duration-300 hover:shadow-hover hover:-translate-y-1;
+}
+
+@utility link-underline {
+  @apply relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full;
+}
+
+@utility page-hero {
+  @apply relative py-20 lg:py-28 bg-gradient-to-br from-secondary via-background to-secondary overflow-hidden;
+}
+
+@utility glass-card {
+  @apply bg-card/90 backdrop-blur-xl border border-border/30;
+}
+
+@utility section-heading {
+  @apply relative inline-block pb-3;
+}
+
+@utility highlight-box {
+  @apply bg-primary/10 border-l-4 border-primary rounded-r-lg p-6;
+}
+
+@utility icon-circle {
+  @apply w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary transition-all duration-300;
+}
+
+@utility icon-circle-sm {
+  @apply w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary;
+}
+
+@utility image-placeholder {
+  @apply bg-gradient-to-br from-secondary via-muted to-secondary animate-pulse;
+}
+
+/* CSS Variables (from your Index.css) */
+:root {
+  --background: 40 35% 97%;
+  --foreground: 220 20% 14%;
+  --card: 0 0% 100%;
+  --card-foreground: 220 20% 14%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 20% 14%;
+  --primary: 24 92% 53%;
+  --primary-foreground: 0 0% 100%;
+  --primary-light: 30 85% 96%;
+  --primary-dark: 24 88% 42%;
+  --secondary: 40 30% 95%;
+  --secondary-foreground: 220 20% 18%;
+  --muted: 40 18% 91%;
+  --muted-foreground: 220 12% 48%;
+  --accent: 16 75% 52%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 80% 58%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 40 20% 90%;
+  --input: 40 20% 94%;
+  --ring: 24 92% 53%;
+  --radius: 0.875rem;
+
+  /* Custom Additions */
+  --golden: 42 87% 55%;
+  --golden-foreground: 0 0% 100%;
+  --hero-overlay: 35 55% 93%;
+  --info: 205 85% 50%;
+  --info-foreground: 0 0% 100%;
+  --success: 150 60% 42%;
+  --success-foreground: 0 0% 100%;
+  --navy: 220 50% 16%;
+  --navy-foreground: 0 0% 98%;
+  --footer: 220 28% 12%;
+  --footer-foreground: 40 15% 94%;
+  --navbar: 0 0% 100%;
+  --navbar-foreground: 220 20% 14%;
+
+  /* Shadows */
+  --shadow-soft: 0 2px 16px -2px hsl(220 20% 14% / 0.06);
+  --shadow-card: 0 4px 24px -6px hsl(220 20% 14% / 0.1);
+  --shadow-hover: 0 16px 48px -12px hsl(220 20% 14% / 0.18);
+  --shadow-glow: 0 0 40px hsl(24 92% 53% / 0.2);
+  --shadow-navbar: 0 2px 20px -4px hsl(220 20% 14% / 0.08);
+
+  /* Sidebar */
+  --sidebar-background: 0 0% 98%;
+  --sidebar-foreground: 240 5.3% 26.1%;
+  --sidebar-primary: 240 5.9% 10%;
+  --sidebar-primary-foreground: 0 0% 98%;
+  --sidebar-accent: 240 4.8% 95.9%;
+  --sidebar-accent-foreground: 240 5.9% 10%;
+  --sidebar-border: 220 13% 91%;
+  --sidebar-ring: 217.2 91.2% 59.8%;
+}
+
+.dark {
+  --background: 220 20% 14%;
+  --foreground: 40 35% 97%;
+  /* Add other dark mode overrides here if needed */
+}
+
+/* Base resets */
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+/* Additional utility overrides */
+.page-hero::before {
+  content: "";
+  @apply absolute inset-0 opacity-15;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f97316' fill-opacity='0.08'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.section-heading::after {
+  content: "";
+  @apply absolute bottom-0 left-1/2 -translate-x-1/2 w-14 h-1 bg-primary rounded-full;
+}
+
+.section-heading-left::after {
+  @apply left-0 translate-x-0;
 }
