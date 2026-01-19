@@ -21,7 +21,7 @@ export const allProjects = [
     image: carouselEducation,
     location: "Maharashtra, Rajasthan, UP",
     startDate: "January 2019",
-    beneficiaries: "12,500+",
+    beneficiaries: "2350+",
     status: "Ongoing",
     description:
       "Our flagship education program provides comprehensive support to underprivileged girls including scholarships, uniforms, books, and mentorship to ensure they complete their education.",
@@ -32,7 +32,7 @@ export const allProjects = [
       "Train 500 women as community educators",
     ],
     achievements: [
-      "12,500+ girls currently enrolled in our programs",
+      "2350+ girls currently enrolled in our programs",
       "95% retention rate in our learning centers",
       "35 learning centers operational across 3 states",
       "1,200+ girls received higher education scholarships",
@@ -46,7 +46,7 @@ export const allProjects = [
     image: carouselAnimals,
     location: "Pan India - 15 States",
     startDate: "March 2018",
-    beneficiaries: "75,000+",
+    beneficiaries: "1200+",
     status: "Ongoing",
     description:
       "Our animal rescue program operates 24/7 helplines, mobile rescue units, and rehabilitation centers to save injured, abandoned, and abused animals across India.",
@@ -57,9 +57,9 @@ export const allProjects = [
       "Achieve 90% rehabilitation success rate",
     ],
     achievements: [
-      "75,000+ animals rescued and treated",
+      "1200+ animals rescued and treated",
       "8 rehabilitation centers operational",
-      "5,000+ animals successfully rehomed",
+      "1000+ animals successfully rehomed",
       "50+ mobile rescue units deployed",
     ],
     gallery: [story1, story2, story3],

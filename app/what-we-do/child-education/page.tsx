@@ -21,9 +21,9 @@ import image1 from "@/assets/child-education-1.jpg";
 import image2 from "@/assets/child-education-2.jpg";
 
 const stats = [
-  { icon: GraduationCap, value: "15,000+", label: "Children Educated" },
-  { icon: BookOpen, value: "120+", label: "Schools Supported" },
-  { icon: Users, value: "500+", label: "Teachers Trained" },
+  { icon: GraduationCap, value: "2350+", label: "Children Educated" },
+  { icon: BookOpen, value: "50+", label: "Schools Supported" },
+  { icon: Users, value: "80+", label: "Teachers Trained" },
   { icon: Award, value: "98%", label: "Attendance Rate" },
 ];
 
@@ -56,10 +56,10 @@ const programs = [
 
 const achievements = [
   "Established 50+ community learning centers across rural India",
-  "Provided school kits to 10,000+ children annually",
-  "Trained 500+ teachers in modern pedagogical methods",
+  "Provided school kits to 1000+ children annually",
+  "Trained 150+ teachers in modern pedagogical methods",
   "Achieved 95% grade-level improvement among enrolled students",
-  "Partnered with 120+ government and private schools",
+  "Partnered with 50+ government and private schools",
   "Organized 200+ parent awareness programs",
 ];
 
@@ -240,7 +240,7 @@ const ChildEducation = () => {
                 />
                 <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-5 rounded-2xl shadow-card max-w-[200px]">
                   <Star className="w-8 h-8 mb-2" />
-                  <p className="font-display text-2xl font-bold">15K+</p>
+                  <p className="font-display text-2xl font-bold">1000+</p>
                   <p className="text-sm opacity-90">
                     Children's lives transformed
                   </p>

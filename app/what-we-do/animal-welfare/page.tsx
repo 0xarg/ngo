@@ -21,10 +21,10 @@ import image1 from "@/assets/animal-welfare-1.jpg";
 import image2 from "@/assets/animal-welfare-2.jpg";
 
 const stats = [
-  { icon: PawPrint, value: "25,000+", label: "Animals Rescued" },
-  { icon: Stethoscope, value: "50,000+", label: "Medical Treatments" },
-  { icon: Syringe, value: "100,000+", label: "Vaccinations Done" },
-  { icon: Home, value: "5,000+", label: "Animals Rehomed" },
+  { icon: PawPrint, value: "1200+", label: "Animals Rescued" },
+  { icon: Stethoscope, value: "300+", label: "Medical Treatments" },
+  { icon: Syringe, value: "4000+", label: "Vaccinations Done" },
+  { icon: Home, value: "800+", label: "Animals Rehomed" },
 ];
 
 const services = [

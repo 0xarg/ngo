@@ -31,7 +31,7 @@ const programs = [
     link: "/what-we-do/child-education",
     color: "bg-blue-100 text-blue-600",
     bgGradient: "from-blue-500/10 to-blue-600/5",
-    stats: "15,000+ children educated",
+    stats: "2350+ children educated",
     featured: true,
   },
 
@@ -43,16 +43,16 @@ const programs = [
     link: "/what-we-do/animal-welfare",
     color: "bg-purple-100 text-purple-600",
     bgGradient: "from-purple-500/10 to-purple-600/5",
-    stats: "25,000+ animals rescued",
+    stats: "1200+ animals rescued",
     featured: true,
   },
 ];
 
 const impactStats = [
-  { value: "50,000+", label: "Lives Touched" },
-  { value: "100+", label: "Active Projects" },
-  { value: "15+", label: "States Covered" },
-  { value: "500+", label: "Volunteers" },
+  { value: "3000+", label: "Lives Touched" },
+  { value: "2+", label: "Active Projects" },
+  { value: "4+", label: "States Covered" },
+  { value: "850+", label: "Volunteers" },
 ];
 
 const WhatWeDo = () => {
@@ -290,7 +290,7 @@ const WhatWeDo = () => {
                   Education For Child Development
                 </h3>
                 <p className="text-white/80 mb-4 line-clamp-2">
-                  Quality education and foundational learning for 15,000+
+                  Quality education and foundational learning for 2350+
                   underprivileged children across India.
                 </p>
                 <Link href="/what-we-do/child-education">
@@ -322,7 +322,7 @@ const WhatWeDo = () => {
                   Kindness Towards Animals
                 </h3>
                 <p className="text-white/80 mb-4 line-clamp-2">
-                  Rescuing, treating, and rehabilitating 25,000+ abandoned and
+                  Rescuing, treating, and rehabilitating 1200+ abandoned and
                   injured animals.
                 </p>
                 <Link href="/what-we-do/animal-welfare">

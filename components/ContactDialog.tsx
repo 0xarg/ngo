@@ -71,7 +71,9 @@ const ContactDialog = ({ open, onOpenChange }: ContactDialogProps) => {
                 <CheckCircle className="w-8 h-8 text-success" />
               </div>
               <div>
-                <h3 className="font-display text-xl text-foreground">Thank You!</h3>
+                <h3 className="font-display text-xl text-foreground">
+                  Thank You!
+                </h3>
                 <p className="text-muted-foreground mt-1">
                   Our team will connect with you soon.
                 </p>
@@ -85,7 +87,7 @@ const ContactDialog = ({ open, onOpenChange }: ContactDialogProps) => {
                   <Input
                     id="name"
                     name="name"
-                    placeholder="John Doe"
+                    placeholder="Anurag Poonia"
                     required
                     className="bg-secondary/50"
                   />
@@ -109,7 +111,7 @@ const ContactDialog = ({ open, onOpenChange }: ContactDialogProps) => {
                   id="email"
                   name="email"
                   type="email"
-                  placeholder="john@example.com"
+                  placeholder="anurag@example.com"
                   required
                   className="bg-secondary/50"
                 />
@@ -146,7 +148,8 @@ const ContactDialog = ({ open, onOpenChange }: ContactDialogProps) => {
               </Button>
 
               <p className="text-xs text-muted-foreground text-center">
-                By submitting, you agree to be contacted by our team regarding your inquiry.
+                By submitting, you agree to be contacted by our team regarding
+                your inquiry.
               </p>
             </form>
           )}

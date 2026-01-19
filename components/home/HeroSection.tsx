@@ -160,8 +160,8 @@ const HeroSection = () => {
             style={{ animationDelay: "0.4s" }}
           >
             {[
-              { value: "22L+", label: "Girls Educated" },
-              { value: "75K+", label: "Animals Rescued" },
+              { value: "2350+", label: "Girls Educated" },
+              { value: "1200+", label: "Animals Rescued" },
               { value: "50+", label: "Communities" },
             ].map((stat) => (
               <div key={stat.label} className="text-card">

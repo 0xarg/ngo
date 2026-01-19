@@ -17,7 +17,7 @@ const programs = [
     title: "Rise of Women Empowerment",
     description:
       "Empowering rural women through skill training, financial literacy, and entrepreneurship programs.",
-    link: "/what-we-do/women-empowerment",
+    link: "/what-we-do/",
     color: "bg-pink-500",
   },
   {
@@ -33,7 +33,7 @@ const programs = [
     title: "Nature Conservation",
     description:
       "Sustainable environmental initiatives including tree plantation and waste management.",
-    link: "/what-we-do/nature-conservation",
+    link: "/what-we-do/",
     color: "bg-green-500",
   },
   {
@@ -41,7 +41,7 @@ const programs = [
     title: "Upholding Humanity",
     description:
       "Supporting communities in crisis through relief work and humanitarian assistance.",
-    link: "/what-we-do/humanity",
+    link: "/what-we-do/",
     color: "bg-purple-500",
   },
   {
@@ -57,7 +57,7 @@ const programs = [
     title: "Awareness for A Better World",
     description:
       "Creating awareness on social issues through campaigns, workshops, and community engagement.",
-    link: "/what-we-do/awareness",
+    link: "/what-we-do/",
     color: "bg-yellow-500",
   },
 ];

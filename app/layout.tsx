@@ -3,10 +3,9 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "HopeHands Foundation | Empowering Girls & Protecting Animals in India",
+  title: "Alchemy Foundation | Empowering Girls & Protecting Animals in India",
   description:
-    "HopeHands Foundation is a leading Indian NGO dedicated to educating underprivileged girls and rescuing abandoned animals. Join our mission through donations, volunteering, and community support.",
+    "Alchemy Foundation is a leading Indian NGO dedicated to educating underprivileged girls and rescuing abandoned animals. Join our mission through donations, volunteering, and community support.",
   keywords: [
     "NGO India",
     "girl education India",
@@ -20,25 +19,25 @@ export const metadata: Metadata = {
   authors: [{ name: "HopeHands Foundation" }],
   openGraph: {
     type: "website",
-    url: "https://hopehands.org/",
+    url: "https://Alchemy.org/",
     title:
-      "HopeHands Foundation | Empowering Girls & Protecting Animals in India",
+      "Alchemy Foundation | Empowering Girls & Protecting Animals in India",
     description:
       "Join India's trusted NGO in empowering underprivileged girls through education and protecting abandoned animals.",
     images: [
-      { url: "https://hopehands.org/og-image.jpg", width: 1200, height: 630 },
+      { url: "https://Alehcmy.org/og-image.jpg", width: 1200, height: 630 },
     ],
-    siteName: "HopeHands Foundation",
+    siteName: "Alchemy Foundation",
     locale: "en_IN",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@hopehands",
-    creator: "@hopehands",
-    title: "HopeHands Foundation",
+    site: "@Alchemy",
+    creator: "@Alchemy",
+    title: "Alchemy Foundation",
     description:
       "Join India's trusted NGO in empowering underprivileged girls and protecting abandoned animals.",
-    images: ["https://hopehands.org/og-image.jpg"],
+    images: ["https://Alchemy.org/og-image.jpg"],
   },
   icons: {
     icon: "/favicon.ico",
@@ -58,13 +57,13 @@ export default function RootLayout({
   const schemaOrgNGO = {
     "@context": "https://schema.org",
     "@type": "NGO",
-    name: "HopeHands Foundation",
-    alternateName: "HopeHands",
+    name: "Alchemy Foundation",
+    alternateName: "Alchemy",
     description:
-      "HopeHands Foundation is a leading Indian NGO dedicated to educating underprivileged girls and rescuing abandoned animals across India.",
-    url: "https://hopehands.org",
-    logo: "https://hopehands.org/favicon.ico",
-    foundingDate: "2017",
+      "Alchemy Foundation is a leading Indian NGO dedicated to educating underprivileged girls and rescuing abandoned animals across India.",
+    url: "https://Alchemy.org",
+    logo: "https://Alchemy.org/favicon.ico",
+    foundingDate: "2026",
     address: {
       "@type": "PostalAddress",
       addressCountry: "IN",
@@ -77,11 +76,11 @@ export default function RootLayout({
       availableLanguage: ["English", "Hindi"],
     },
     sameAs: [
-      "https://facebook.com/hopehands",
-      "https://twitter.com/hopehands",
-      "https://instagram.com/hopehands",
-      "https://linkedin.com/company/hopehands",
-      "https://youtube.com/hopehands",
+      "https://facebook.com/Alchemy",
+      "https://twitter.com/Alchemy",
+      "https://instagram.com/Alchemy",
+      "https://linkedin.com/company/Alchemy",
+      "https://youtube.com/Alchemy",
     ],
     nonprofitStatus: "Nonprofit501c3",
   };

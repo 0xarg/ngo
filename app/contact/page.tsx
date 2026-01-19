@@ -27,26 +27,42 @@ import {
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
-const contactInfo = [
+const offices = [
   {
-    icon: MapPin,
-    title: "Our Office",
-    details: ["123 Hope Street, Andheri West", "Mumbai, Maharashtra 400058"],
+    city: "Noida",
+    type: "Head Office",
+    address: "A-44 Galaxy Business Park, Sushil Marg,Block A, Sector 62",
+    state: "UP 201309",
+    phone: "+91 22 1234 5678",
+    email: "Support@alchemyfoundation.in",
+    hours: "Mon - Fri: 9:00 AM - 6:00 PM",
   },
   {
-    icon: Phone,
-    title: "Phone",
-    details: ["+91 22 1234 5678", "+91 98765 43210"],
+    city: "Aurangabad",
+    type: "Registered Office",
+    address: "H-NO F-39-10, CIDCO N-7",
+    state: "Maharashtra 431001",
+    phone: "+91 11 2345 6789",
+    email: "Support@alchemyfoundation.in",
+    hours: "Mon - Fri: 9:30 AM - 5:30 PM",
   },
+];
+
+const generalContact = [
+  // {
+  //   icon: Phone,
+  //   title: "Helpline",
+  //   details: ["+91 1800 123 4567 (Toll Free)", "+91 98765 43210"],
+  // },
   {
     icon: Mail,
     title: "Email",
-    details: ["info@hopehands.org", "support@hopehands.org"],
+    details: ["Support@alchemyfoundation.in"],
   },
   {
     icon: Clock,
-    title: "Office Hours",
-    details: ["Mon - Fri: 9:00 AM - 6:00 PM", "Sat: 10:00 AM - 2:00 PM"],
+    title: "Support Hours",
+    details: ["24/7 Emergency Support", "Office: Mon - Sat"],
   },
 ];
 
@@ -91,6 +107,73 @@ const Contact = () => {
         </div>
       </section>
 
+      {/* Office Locations */}
+      <section className="section-padding bg-secondary/30">
+        <div className="container-custom">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="text-primary font-semibold text-sm tracking-wide uppercase">
+              Our Presence
+            </span>
+            <h2 className="font-display text-3xl sm:text-4xl text-foreground mt-2 mb-4">
+              Office <span className="text-primary">Locations</span>
+            </h2>
+            <p className="text-muted-foreground">
+              Visit us at any of our offices across India. Our team is always
+              ready to help.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {offices.map((office) => (
+              <Card
+                key={office.city}
+                className="shadow-card hover:shadow-lg transition-shadow group overflow-hidden"
+              >
+                <div className="h-2 bg-gradient-to-r from-primary to-primary/60" />
+                <CardContent className="p-6">
+                  <div className="flex items-start justify-between mb-4">
+                    <div>
+                      <h3 className="font-display text-xl text-foreground group-hover:text-primary transition-colors">
+                        {office.city}
+                      </h3>
+                      <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-0.5 rounded-full">
+                        {office.type}
+                      </span>
+                    </div>
+                    <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-5 h-5 text-primary" />
+                    </div>
+                  </div>
+
+                  <div className="space-y-3 text-sm">
+                    <div>
+                      <p className="text-foreground font-medium">
+                        {office.address}
+                      </p>
+                      <p className="text-muted-foreground">{office.state}</p>
+                    </div>
+                    <div className="pt-3 border-t border-border/50 space-y-2">
+                      <a
+                        href={`mailto:${office.email}`}
+                        className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        <Mail className="w-4 h-4" />
+                        {office.email}
+                      </a>
+                      <div className="flex items-center gap-2 text-muted-foreground">
+                        <Clock className="w-4 h-4" />
+                        <span className="text-xs">{office.hours}</span>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Form & Info Section */}
       <section className="section-padding bg-background">
         <div className="container-custom">
           <div className="grid lg:grid-cols-3 gap-8">
@@ -108,8 +191,8 @@ const Contact = () => {
                 <CardContent>
                   {isSubmitted ? (
                     <div className="text-center py-12">
-                      <div className="w-16 h-16 rounded-full bg-success/10 flex items-center justify-center mx-auto mb-4">
-                        <CheckCircle className="w-8 h-8 text-success" />
+                      <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
+                        <CheckCircle className="w-8 h-8 text-green-600" />
                       </div>
                       <h3 className="font-display text-xl text-foreground mb-2">
                         Thank You!
@@ -189,11 +272,11 @@ const Contact = () => {
 
             {/* Contact Info Sidebar */}
             <div className="space-y-6">
-              {contactInfo.map((item) => (
+              {generalContact.map((item) => (
                 <Card key={item.title} className="shadow-soft">
                   <CardContent className="p-5">
                     <div className="flex gap-4">
-                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                         <item.icon className="w-6 h-6 text-primary" />
                       </div>
                       <div>
@@ -215,16 +298,19 @@ const Contact = () => {
               ))}
 
               {/* Social Links */}
-              <Card className="bg-primary text-primary-foreground">
-                <CardContent className="p-5">
-                  <h3 className="font-semibold mb-4">Follow Us</h3>
+              <Card className="bg-gradient-to-br from-primary to-primary/80 text-primary-foreground">
+                <CardContent className="p-6">
+                  <h3 className="font-semibold mb-4">Connect With Us</h3>
+                  <p className="text-sm text-primary-foreground/80 mb-4">
+                    Follow us on social media for updates and stories.
+                  </p>
                   <div className="flex gap-3">
                     {socialLinks.map((social) => (
                       <a
                         key={social.label}
                         href={social.href}
                         aria-label={social.label}
-                        className="w-10 h-10 rounded-full bg-primary-foreground/20 flex items-center justify-center hover:bg-primary-foreground/30 transition-colors"
+                        className="w-10 h-10 rounded-full bg-primary-foreground/20 flex items-center justify-center hover:bg-primary-foreground/30 hover:scale-110 transition-all"
                       >
                         <social.icon className="w-5 h-5" />
                       </a>
@@ -238,12 +324,18 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
-      <section className="h-96 bg-secondary">
+      <section className="h-96 bg-secondary/50 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-background/20 to-transparent pointer-events-none z-10" />
         <div className="w-full h-full flex items-center justify-center">
-          <div className="text-center">
-            <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
-            <p className="text-muted-foreground">
-              Interactive map would be displayed here
+          <div className="text-center relative z-20">
+            <div className="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+              <MapPin className="w-10 h-10 text-primary" />
+            </div>
+            <h3 className="font-display text-xl text-foreground mb-2">
+              Find Us On The Map
+            </h3>
+            <p className="text-muted-foreground text-sm">
+              Interactive map integration coming soon
             </p>
           </div>
         </div>

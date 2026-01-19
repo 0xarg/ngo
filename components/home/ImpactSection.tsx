@@ -54,26 +54,26 @@ const StatItem = ({ value, suffix, label, delay = 0 }: StatItemProps) => {
 const ImpactSection = () => {
   const stats = [
     {
-      value: 22,
-      suffix: "L+",
+      value: 2350,
+      suffix: "+",
       label: "Girls Mobilised for Enrolment",
-      display: 22,
+      display: 2350,
     },
     {
-      value: 34,
-      suffix: "L+",
+      value: 4200,
+      suffix: "+",
       label: "Students Supported with Learning",
-      display: 34,
+      display: 4200,
     },
     {
-      value: 75,
-      suffix: "K+",
+      value: 1200,
+      suffix: "+",
       label: "Animals Rescued & Treated",
-      display: 75,
+      display: 1200,
     },
     { value: 4, suffix: "", label: "States Covered", display: 4 },
-    { value: 23, suffix: "K+", label: "Active Volunteers", display: 23 },
-    { value: 500, suffix: "+", label: "Partner Organizations", display: 500 },
+    { value: 850, suffix: "+", label: "Active Volunteers", display: 850 },
+    { value: 70, suffix: "+", label: "Partner Organizations", display: 70 },
   ];
 
   return (

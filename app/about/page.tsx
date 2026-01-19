@@ -24,39 +24,45 @@ import aboutApproach from "@/assets/about-approach.jpg";
 const approachItems = [
   {
     icon: Users,
-    letter: "R",
-    title: "Rise of Women Empowerment",
+    letter: "A",
+    title: "Awaken Her Potential",
     color: "bg-pink-500",
   },
   {
     icon: BookOpen,
-    letter: "E",
-    title: "Education for Child Development",
+    letter: "L",
+    title: "Literacy Lights Lives",
     color: "bg-blue-500",
   },
   {
     icon: Leaf,
-    letter: "N",
-    title: "Nature Conservation",
+    letter: "C",
+    title: "Compassion Calls Us",
     color: "bg-green-500",
   },
   {
     icon: HandHeart,
-    letter: "U",
-    title: "Upholding Humanity",
+    letter: "H",
+    title: "Heal with Heart",
     color: "bg-purple-500",
   },
   {
     icon: PawPrint,
-    letter: "K",
-    title: "Kindness Towards Animals",
+    letter: "E",
+    title: "Empower Every Girl",
     color: "bg-orange-500",
   },
   {
     icon: Lightbulb,
-    letter: "A",
-    title: "Awareness for A Better World",
+    letter: "M",
+    title: " Mercy for All Creatures",
     color: "bg-yellow-500",
+  },
+  {
+    icon: HandHeart,
+    letter: "Y",
+    title: "Yield a Kinder World",
+    color: "bg-purple-500",
   },
 ];
 
@@ -79,7 +85,7 @@ const legalItems = [
   {
     icon: FileText,
     title: "Niti Aayog registered (Company/Organization)",
-    subtitle: "REG/2024/0484877",
+    // subtitle: "REG/2024/0484877",
   },
 ];
 
@@ -251,8 +257,8 @@ const About = () => {
             </div>
           </div>
 
-          {/* RENUKA Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 lg:gap-6">
+          {/* Alchemy Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4 lg:gap-6">
             {approachItems.map((item) => (
               <div
                 key={item.letter}
@@ -262,7 +268,7 @@ const About = () => {
                   <item.icon className="w-6 h-6" />
                 </div>
                 <div
-                  className={`text-4xl lg:text-5xl font-display font-bold text-primary mb-2`}
+                  className={`text-3xl lg:text-5xl font-display font-bold text-primary mb-2`}
                 >
                   {item.letter}
                 </div>

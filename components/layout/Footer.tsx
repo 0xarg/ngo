@@ -52,7 +52,7 @@ const Footer = () => {
               </div>
               <div>
                 <span className="font-display text-xl font-bold text-card">
-                  HopeHands
+                  Alchemy Foundation
                 </span>
                 <p className="text-xs text-footer-foreground/70">
                   For Girls & Animals
@@ -134,15 +134,15 @@ const Footer = () => {
             <ul className="space-y-4 text-sm text-footer-foreground/80">
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                info@hopehands.org
+                Support@alchemyfoundation.in
               </li>
-              <li className="flex items-start gap-3">
+              {/* <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 +91 98765 43210
-              </li>
+              </li> */}
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                New Delhi, India
+                Noida, India
               </li>
             </ul>
           </div>
@@ -151,7 +151,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-footer-foreground/10 text-center">
           <p className="text-sm text-footer-foreground/60">
-            © {currentYear} HopeHands Foundation. All rights reserved.
+            © {currentYear} Alchemy Foundation. All rights reserved.
           </p>
         </div>
       </div>
