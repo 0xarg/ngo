@@ -5,13 +5,13 @@ import { Heart, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
 import carouselEducation from "@/assets/carousel-education2.jpg";
 import carouselWomen from "@/assets/carousel-women.jpg";
-import carouselAnimals from "@/assets/carousel-animals.jpg";
+import carouselAnimals from "@/assets/carousel-animals3.jpg";
 import carouselNature from "@/assets/carousel-nature.jpg";
 import Link from "next/link";
 
 const heroSlides = [
   {
-    image: heroImage,
+    image: carouselEducation,
     tag: "#EducateHer #ProtectThem",
     title: "Every Girl Deserves Education.",
     highlight: "Every Animal Deserves Care.",
@@ -19,7 +19,7 @@ const heroSlides = [
       "We work with communities to ensure underprivileged girls receive quality education and abandoned animals find shelter, healthcare, and loving homes.",
   },
   {
-    image: carouselEducation,
+    image: heroImage,
     tag: "#ChildEducation",
     title: "Building Futures Through",
     highlight: "Quality Education",

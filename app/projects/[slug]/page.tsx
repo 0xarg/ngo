@@ -6,9 +6,12 @@ import { Card } from "@/components/ui/card";
 import carouselEducation from "@/assets/carousel-education.jpg";
 import carouselAnimals from "@/assets/carousel-animals.jpg";
 import aboutCommunity from "@/assets/about-community.jpg";
-import story1 from "@/assets/story-1.jpg";
-import story2 from "@/assets/story-2.jpg";
-import story3 from "@/assets/story-3.jpg";
+import story1 from "@/assets/carousel-education2.jpg";
+import story2 from "@/assets/carousel-education3.jpg";
+import story3 from "@/assets/carousel-education4.jpg";
+import story1Animal from "@/assets/carousel-animals2.jpg";
+import story2Animal from "@/assets/carousel-animals3.jpg";
+import story3Animal from "@/assets/carousel-animals4.jpg";
 import OptimizedImage from "@/components/ui/OptimizedImage";
 import {
   Heart,
@@ -69,7 +72,7 @@ const allProjects = [
       "1000+ animals successfully rehomed",
       "50+ mobile rescue units deployed",
     ],
-    gallery: [story1, story2, story3],
+    gallery: [story1Animal, story2Animal, story3Animal],
   },
 ];
 
