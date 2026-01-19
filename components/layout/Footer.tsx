@@ -64,17 +64,16 @@ const Footer = () => {
               the voiceless through compassionate animal welfare.
             </p>
             <div className="flex gap-3">
-              {[Facebook, Twitter, Instagram, Youtube, Linkedin].map(
-                (Icon, i) => (
-                  <a
-                    key={i}
-                    href="#"
-                    className="w-10 h-10 rounded-full bg-footer-foreground/10 flex items-center justify-center hover:bg-primary transition-colors"
-                  >
-                    <Icon className="w-5 h-5" />
-                  </a>
-                ),
-              )}
+              {[Instagram].map((Icon, i) => (
+                <a
+                  key={i}
+                  href="https://www.instagram.com/alchemy.foundation"
+                  target="blank"
+                  className="w-10 h-10 rounded-full bg-footer-foreground/10 flex items-center justify-center hover:bg-primary transition-colors"
+                >
+                  <Icon className="w-5 h-5" />
+                </a>
+              ))}
             </div>
           </div>
 

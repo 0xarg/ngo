@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-import { Heart, Menu, X, ChevronDown, Phone } from "lucide-react";
+import { Heart, Menu, X, ChevronDown, Phone, Instagram } from "lucide-react";
 import ContactDialog from "@/components/ContactDialog";
 
 const navItems = [
@@ -185,19 +185,15 @@ const Navbar = () => {
 
             {/* Right Actions */}
             <div className="hidden lg:flex items-center gap-3">
-              <Button
-                variant="ghost"
-                size="sm"
-                className={`gap-2 font-medium rounded-full transition-all duration-200 ${
-                  isScrolled
-                    ? "text-foreground/75 hover:text-primary hover:bg-primary/5"
-                    : "text-foreground/90 hover:text-foreground hover:bg-card/15"
-                }`}
-                onClick={() => setContactOpen(true)}
+              <Link
+                // size="sm"
+                href={"https://www.instagram.com/alchemy.foundation"}
+                target="blank"
+                className={` flex py-1 px-2 items-center gap-2 font-medium rounded-full transition-all duration-200 ${"text-foreground/75 hover:text-primary hover:bg-primary/5"}`}
               >
-                <Phone className="w-4 h-4" />
-                Contact
-              </Button>
+                <Instagram className="w-4 h-4" />
+                Instagram
+              </Link>
               <Link href="/donate">
                 <Button
                   variant="donate"
@@ -212,14 +208,17 @@ const Navbar = () => {
 
             {/* Mobile Menu Toggle */}
             <div className="flex lg:hidden items-center gap-3">
-              <Link href="/donate">
+              <Link
+                href="https://www.instagram.com/alchemy.foundation"
+                target="blank"
+              >
                 <Button
                   variant="donate"
                   size="sm"
                   className="rounded-full gap-1.5 shadow-soft"
                 >
-                  <Heart className="w-4 h-4" fill="currentColor" />
-                  Donate
+                  <Instagram className="w-4 h-4" />
+                  Instagram
                 </Button>
               </Link>
               <button
@@ -303,17 +302,15 @@ const Navbar = () => {
               </div>
             ))}
             <div className="pt-3 px-2">
-              <Button
-                variant="outline"
-                className="w-full gap-2 rounded-xl py-5 font-medium"
-                onClick={() => {
-                  setIsOpen(false);
-                  setContactOpen(true);
-                }}
-              >
-                <Phone className="w-4 h-4" />
-                Contact Us
-              </Button>
+              <Link href={"/donate"}>
+                <Button
+                  variant="outline"
+                  className="w-full gap-2 rounded-xl py-5 font-medium"
+                >
+                  <Heart className="w-4 h-4" />
+                  Donate
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

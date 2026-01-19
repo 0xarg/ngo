@@ -56,7 +56,7 @@ const services = [
 
 const achievements = [
   "Operated 5+ animal rescue operations across cities",
-  "Established 3 animal care shelters with 24/7 veterinary support",
+  "Helped in 3 establishing care shelters with 24/7 veterinary support",
   "Conducted 10+ vaccination camps benefiting 500+ animals",
   "Sterilized 70+ animals to humanely control population",
   "Trained 100+ community animal caregivers",
@@ -238,7 +238,7 @@ const AnimalWelfare = () => {
                 />
                 <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-5 rounded-2xl shadow-card max-w-[200px]">
                   <Heart className="w-8 h-8 mb-2" />
-                  <p className="font-display text-2xl font-bold">25K+</p>
+                  <p className="font-display text-2xl font-bold">4000+</p>
                   <p className="text-sm opacity-90">Animals saved with love</p>
                 </div>
               </div>
@@ -323,34 +323,6 @@ const AnimalWelfare = () => {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Report Animal Emergency CTA */}
-      <section className="section-padding bg-purple-600">
-        <div className="container-custom">
-          <div className="text-center max-w-2xl mx-auto">
-            <PawPrint className="w-16 h-16 text-white/80 mx-auto mb-6" />
-            <h2 className="font-display text-3xl text-white mb-4">
-              Found an Injured Animal?
-            </h2>
-            <p className="text-white/80 mb-8">
-              Call our 24/7 rescue helpline or fill out our emergency form. Our
-              team will respond immediately.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <a href="tel:+911800001234">
-                <button className="px-6 py-3 bg-white text-purple-600 rounded-full font-semibold hover:shadow-hover transition-all">
-                  📞 1800-001-1234
-                </button>
-              </a>
-              <Link href="/contact">
-                <button className="px-6 py-3 bg-white/20 text-white rounded-full font-semibold hover:bg-white/30 transition-all">
-                  Report Online
-                </button>
-              </Link>
             </div>
           </div>
         </div>
