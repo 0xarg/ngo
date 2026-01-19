@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
+const nextConfig = {
   // Add this block to disable linting during build
   eslint: {
     ignoreDuringBuilds: true,
@@ -9,6 +9,6 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-};
+} as NextConfig;
 
 export default nextConfig;
