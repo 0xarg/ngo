@@ -3,6 +3,12 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import carouselEducation from "@/assets/carousel-education.jpg";
+import carouselAnimals from "@/assets/carousel-animals.jpg";
+import aboutCommunity from "@/assets/about-community.jpg";
+import story1 from "@/assets/story-1.jpg";
+import story2 from "@/assets/story-2.jpg";
+import story3 from "@/assets/story-3.jpg";
 import OptimizedImage from "@/components/ui/OptimizedImage";
 import {
   Heart,
@@ -14,7 +20,58 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { useParams, notFound } from "next/navigation";
-import { allProjects } from "../page"; // Import data from the parent page
+const allProjects = [
+  {
+    slug: "girl-education",
+    title: "Shiksha Shakti - Girl Education Initiative",
+    subtitle: "Empowering girls through quality education",
+    image: carouselEducation,
+    location: "Maharashtra, Rajasthan, UP",
+    startDate: "January 2019",
+    beneficiaries: "2350+",
+    status: "Ongoing",
+    description:
+      "Our flagship education program provides comprehensive support to underprivileged girls including scholarships, uniforms, books, and mentorship to ensure they complete their education.",
+    objectives: [
+      "Provide free quality education to 25,000 girls by 2027",
+      "Reduce dropout rates by 80% in partner schools",
+      "Establish 50 learning centers across rural India",
+      "Train 500 women as community educators",
+    ],
+    achievements: [
+      "2350+ girls currently enrolled in our programs",
+      "95% retention rate in our learning centers",
+      "35 learning centers operational across 3 states",
+      "1,200+ girls received higher education scholarships",
+    ],
+    gallery: [story1, story2, story3],
+  },
+  {
+    slug: "animal-rescue",
+    title: "Jeevan Raksha - Animal Rescue Program",
+    subtitle: "Rescuing and rehabilitating animals in need",
+    image: carouselAnimals,
+    location: "Pan India - 15 States",
+    startDate: "March 2018",
+    beneficiaries: "1200+",
+    status: "Ongoing",
+    description:
+      "Our animal rescue program operates 24/7 helplines, mobile rescue units, and rehabilitation centers to save injured, abandoned, and abused animals across India.",
+    objectives: [
+      "Operate 24/7 animal rescue helplines in 20 major cities",
+      "Establish 10 fully-equipped rehabilitation centers",
+      "Conduct 100,000 rescue operations by 2026",
+      "Achieve 90% rehabilitation success rate",
+    ],
+    achievements: [
+      "1200+ animals rescued and treated",
+      "8 rehabilitation centers operational",
+      "1000+ animals successfully rehomed",
+      "50+ mobile rescue units deployed",
+    ],
+    gallery: [story1, story2, story3],
+  },
+];
 
 const ProjectDetail = () => {
   const { slug } = useParams();

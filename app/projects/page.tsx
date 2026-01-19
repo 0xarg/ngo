@@ -13,7 +13,7 @@ import story2 from "@/assets/story-2.jpg";
 import story3 from "@/assets/story-3.jpg";
 
 // --- DATA (Exported to be used by the detail page) ---
-export const allProjects = [
+const allProjects = [
   {
     slug: "girl-education",
     title: "Shiksha Shakti - Girl Education Initiative",
