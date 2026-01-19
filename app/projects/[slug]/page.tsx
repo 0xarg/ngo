@@ -35,14 +35,14 @@ const allProjects = [
     objectives: [
       "Provide free quality education to 25,000 girls by 2027",
       "Reduce dropout rates by 80% in partner schools",
-      "Establish 50 learning centers across rural India",
+      "Establish 35 learning centers across rural India",
       "Train 500 women as community educators",
     ],
     achievements: [
-      "2350+ girls currently enrolled in our programs",
+      "1250+ girls currently enrolled in our programs",
       "95% retention rate in our learning centers",
-      "35 learning centers operational across 3 states",
-      "1,200+ girls received higher education scholarships",
+      "6 learning centers operational across 3 states",
+      "750+ girls received higher education scholarships",
     ],
     gallery: [story1, story2, story3],
   },

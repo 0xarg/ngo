@@ -44,8 +44,8 @@ const DonationBox = ({
       if (amount >= 5500)
         return `will provide medical care for ${Math.floor(amount / 1000)} animals`;
       if (amount >= 2200)
-        return `will feed ${Math.floor(amount / 200)} stray animals for a month`;
-      if (amount >= 1100) return "will vaccinate 5 street dogs";
+        return `will feed ${Math.floor(amount / 380)} stray animals for a month`;
+      if (amount >= 500) return "will feed 5+ street dogs";
     }
     return "will make a meaningful impact";
   };

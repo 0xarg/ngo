@@ -55,12 +55,12 @@ const services = [
 ];
 
 const achievements = [
-  "Operated 500+ animal rescue operations across cities",
-  "Established 10 animal care shelters with 24/7 veterinary support",
-  "Conducted 200+ vaccination camps benefiting 50,000+ animals",
-  "Sterilized 30,000+ animals to humanely control population",
-  "Trained 1,000+ community animal caregivers",
-  "Rehabilitated and rehomed 5,000+ animals",
+  "Operated 5+ animal rescue operations across cities",
+  "Established 3 animal care shelters with 24/7 veterinary support",
+  "Conducted 10+ vaccination camps benefiting 500+ animals",
+  "Sterilized 70+ animals to humanely control population",
+  "Trained 100+ community animal caregivers",
+  "Rehabilitated and rehomed 150+ animals",
 ];
 
 const AnimalWelfare = () => {
@@ -121,7 +121,7 @@ const AnimalWelfare = () => {
                       ₹500 / month
                     </p>
                     <p className="text-sm text-muted-foreground">
-                      Feed 10 stray animals for a month
+                      Feed 1 stray animals for a month
                     </p>
                   </div>
                 </div>
@@ -134,7 +134,7 @@ const AnimalWelfare = () => {
                       ₹1,100 / donation
                     </p>
                     <p className="text-sm text-muted-foreground">
-                      Vaccinate 5 street dogs against rabies
+                      Vaccinate 2 street dogs against rabies
                     </p>
                   </div>
                 </div>
