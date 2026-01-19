@@ -15,18 +15,12 @@ const navItems = [
     href: "/what-we-do",
     children: [
       { label: "Overview", href: "/what-we-do" },
-      {
-        label: "Rise Of Women Empowerment",
-        href: "/what-we-do/women-empowerment",
-      },
+
       {
         label: "Education For Child Development",
         href: "/what-we-do/child-education",
       },
-      { label: "Nature Conservation", href: "/what-we-do/nature-conservation" },
-      { label: "Upholding Humanity", href: "/what-we-do/humanity" },
       { label: "Kindness Towards Animals", href: "/what-we-do/animal-welfare" },
-      { label: "Awareness For A Better World", href: "/what-we-do/awareness" },
     ],
   },
   {
@@ -110,7 +104,7 @@ const Navbar = () => {
                     isScrolled ? "text-foreground" : "text-foreground"
                   }`}
                 >
-                  HopeHands
+                  Alchemy foundation
                 </span>
                 <p
                   className={`text-xs font-medium tracking-wide transition-colors ${
