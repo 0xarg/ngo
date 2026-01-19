@@ -243,7 +243,7 @@ const About = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   Inspired by the philosophy of holistic development, our
                   approach encompasses six pillars for positive social change.
-                  Together, these pillars form RENUKA—a symbol of collective
+                  Together, these pillars form ALCHEMY symbol of collective
                   empowerment and sustainable development.
                 </p>
               </div>

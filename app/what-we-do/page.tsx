@@ -19,8 +19,8 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import heroImage from "@/assets/about-hero.jpg";
-import educationImage from "@/assets/child-education-hero.jpg";
-import animalImage from "@/assets/animal-welfare-hero.jpg";
+import educationImage from "@/assets/carousel-education2.jpg";
+import animalImage from "@/assets/carousel-animals.jpg";
 
 const programs = [
   {

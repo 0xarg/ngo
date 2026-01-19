@@ -3,7 +3,7 @@ import { useEffect, useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Heart, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
-import carouselEducation from "@/assets/carousel-education.jpg";
+import carouselEducation from "@/assets/carousel-education2.jpg";
 import carouselWomen from "@/assets/carousel-women.jpg";
 import carouselAnimals from "@/assets/carousel-animals.jpg";
 import carouselNature from "@/assets/carousel-nature.jpg";

@@ -9,7 +9,7 @@ import {
   HandHeart,
   Lightbulb,
 } from "lucide-react";
-import carouselEducation from "@/assets/carousel-education.jpg";
+import carouselEducation from "@/assets/carousel-education2.jpg";
 import Link from "next/link";
 const programs = [
   {

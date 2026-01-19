@@ -16,9 +16,9 @@ import {
   Star,
 } from "lucide-react";
 import Link from "next/link";
-import heroImage from "@/assets/child-education-hero.jpg";
-import image1 from "@/assets/child-education-1.jpg";
-import image2 from "@/assets/child-education-2.jpg";
+import heroImage from "@/assets/carousel-education2.jpg";
+import image1 from "@/assets/carousel-education4.jpg";
+import image2 from "@/assets/carousel-education3.jpg";
 
 const stats = [
   { icon: GraduationCap, value: "2350+", label: "Children Educated" },
