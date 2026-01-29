@@ -9,6 +9,10 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  output: "export",
+  images: {
+    unoptimized: true,
+  },
 } as NextConfig;
 
 export default nextConfig;
